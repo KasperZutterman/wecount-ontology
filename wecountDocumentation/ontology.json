@@ -1,0 +1,550 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://hdelva.be/#me"
+  }, {
+    "@id" : "https://julianrojas.org/#me"
+  }, {
+    "@id" : "https://kasperzutterman.com/#me"
+  }, {
+    "@id" : "https://pietercolpaert.be/#me"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology introduces the definition of a set of WeCount related terms. It reuses and extends the SOSA (see https://www.w3.org/ns/sosa/) and the schema.org (see https://schema.org) vocabularies."
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "https://telraam.net/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "wecount"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://wecount.ilabt.imec.be/wecount/vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Open WeCount Vocabulary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://schema.org/"
+  }, {
+    "@id" : "https://telraam.net/"
+  }, {
+    "@id" : "https://www.w3.org/ns/sosa/"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://schema.org/"
+  }, {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  }, {
+    "@id" : "https://www.w3.org/ns/sosa/"
+  } ],
+  "http://xmlns.com/foaf/0.1/primaryTopic" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/primaryTopic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://xmlns.com/foaf/0.1/Document" ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A camera that can capture the traffic on the street."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/sosa/Sensor"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-09-18"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The status a camera can be in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Camera Status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera is active."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "active"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#bike",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The bikes counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bike"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The left moving bikes counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bike_lft"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The right moving bikes counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bike_rgt"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect bikes on the left hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bikes_left"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect bikes on the right hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "bikes_right"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#car",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The cars counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "car"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The left moving cars counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "car_lft"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The right moving cars counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "car_rgt"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect cars on the left hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cars_left"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect cars on the right hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cars_right"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#direction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The direction the camera is oriented."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "direction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#heavy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The heavy vehicles counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "heavy"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The left moving heavy vehicles counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "heavy_lft"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The right moving heavy vehicles counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "heavy_rgt"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#mac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The mac address of the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "mac"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#manual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "If the measurements of the camera are taken manually or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#non_active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera is not active."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "non active"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The pedestrians counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pedestrian"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The left moving pedestrians counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pedestrian_lft"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The right moving pedestrians counted by the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pedestrian_rgt"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect pedestrians on the left hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pedestrians_left"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The camera can detect pedestrians on the right hand side of the road."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "pedestrians_right"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The segment_id of the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "segment_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#uptime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://www.w3.org/ns/sosa/ObservableProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The uptime percentage of the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "uptime"
+  } ]
+}, {
+  "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#user_id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The user_id of the camera."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://wecount.ilabt.imec.be/wecount/vocabulary#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "user_id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/sosa/ObservableProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://www.w3.org/ns/sosa/Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

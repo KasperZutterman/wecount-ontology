@@ -1,0 +1,308 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+_:genid1 <http://www.w3.org/2002/07/owl#imports> <http://schema.org/> .
+_:genid1 <http://www.w3.org/2002/07/owl#imports> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+_:genid1 <http://www.w3.org/2002/07/owl#imports> <https://www.w3.org/ns/sosa/> .
+_:genid1 <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+_:genid1 <http://purl.org/dc/terms/creator> <http://hdelva.be/#me> .
+_:genid1 <http://purl.org/dc/terms/creator> <https://julianrojas.org/#me> .
+_:genid1 <http://purl.org/dc/terms/creator> <https://kasperzutterman.com/#me> .
+_:genid1 <http://purl.org/dc/terms/creator> <https://pietercolpaert.be/#me> .
+_:genid1 <http://purl.org/dc/terms/description> "This ontology introduces the definition of a set of WeCount related terms. It reuses and extends the SOSA (see https://www.w3.org/ns/sosa/) and the schema.org (see https://schema.org) vocabularies."@en .
+_:genid1 <http://purl.org/dc/terms/hasFormat> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+_:genid1 <http://purl.org/dc/terms/issued> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid1 <http://purl.org/dc/terms/modified> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:genid1 <http://purl.org/dc/terms/rights> "https://telraam.net/" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespacePrefix> "wecount" .
+_:genid1 <http://purl.org/vocab/vann/preferredNamespaceUri> "https://wecount.ilabt.imec.be/wecount/vocabulary" .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#label> "Open WeCount Vocabulary"@en .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://telraam.net/> .
+_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.w3.org/ns/sosa/> .
+_:genid1 <http://xmlns.com/foaf/0.1/primaryTopic> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/primaryTopic
+<http://xmlns.com/foaf/0.1/primaryTopic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#active
+<https://wecount.ilabt.imec.be/wecount/vocabulary#active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#active> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#active> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera is active."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#active> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#active> <http://www.w3.org/2000/01/rdf-schema#label> "active"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#direction
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/2000/01/rdf-schema#comment> "The direction the camera is oriented."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#direction> <http://www.w3.org/2000/01/rdf-schema#label> "direction"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#mac
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/2000/01/rdf-schema#comment> "The mac address of the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#mac> <http://www.w3.org/2000/01/rdf-schema#label> "mac"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#manual
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/2000/01/rdf-schema#comment> "If the measurements of the camera are taken manually or not."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#manual> <http://www.w3.org/2000/01/rdf-schema#label> "manual"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#non_active
+<https://wecount.ilabt.imec.be/wecount/vocabulary#non_active> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#non_active> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#non_active> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera is not active."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#non_active> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#non_active> <http://www.w3.org/2000/01/rdf-schema#label> "non active"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The segment_id of the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id> <http://www.w3.org/2000/01/rdf-schema#label> "segment_id"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#user_id
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/2000/01/rdf-schema#domain> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/2000/01/rdf-schema#comment> "The user_id of the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#user_id> <http://www.w3.org/2000/01/rdf-schema#label> "user_id"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#Camera
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/sosa/Sensor> .
+<https://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://purl.org/dc/terms/created> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://purl.org/dc/terms/modified> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/2000/01/rdf-schema#comment> "A camera that can capture the traffic on the street."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/2000/01/rdf-schema#label> "Camera"@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://wecount.ilabt.imec.be/wecount/vocabulary#Camera> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://purl.org/dc/terms/created> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://purl.org/dc/terms/modified> "2020-09-18"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The status a camera can be in."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Status"@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://www.w3.org/ns/sosa/ObservableProperty
+<https://www.w3.org/ns/sosa/ObservableProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.w3.org/ns/sosa/Sensor
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#
+<https://wecount.ilabt.imec.be/wecount/vocabulary#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#bike
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike> <http://www.w3.org/2000/01/rdf-schema#comment> "The bikes counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike> <http://www.w3.org/2000/01/rdf-schema#label> "bike"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft> <http://www.w3.org/2000/01/rdf-schema#comment> "The left moving bikes counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft> <http://www.w3.org/2000/01/rdf-schema#label> "bike_lft"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt> <http://www.w3.org/2000/01/rdf-schema#comment> "The right moving bikes counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt> <http://www.w3.org/2000/01/rdf-schema#label> "bike_rgt"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect bikes on the left hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left> <http://www.w3.org/2000/01/rdf-schema#label> "bikes_left"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect bikes on the right hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right> <http://www.w3.org/2000/01/rdf-schema#label> "bikes_right"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#car
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car> <http://www.w3.org/2000/01/rdf-schema#comment> "The cars counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car> <http://www.w3.org/2000/01/rdf-schema#label> "car"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft> <http://www.w3.org/2000/01/rdf-schema#comment> "The left moving cars counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft> <http://www.w3.org/2000/01/rdf-schema#label> "car_lft"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt> <http://www.w3.org/2000/01/rdf-schema#comment> "The right moving cars counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt> <http://www.w3.org/2000/01/rdf-schema#label> "car_rgt"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect cars on the left hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left> <http://www.w3.org/2000/01/rdf-schema#label> "cars_left"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect cars on the right hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right> <http://www.w3.org/2000/01/rdf-schema#label> "cars_right"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#heavy
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy> <http://www.w3.org/2000/01/rdf-schema#comment> "The heavy vehicles counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy> <http://www.w3.org/2000/01/rdf-schema#label> "heavy"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft> <http://www.w3.org/2000/01/rdf-schema#comment> "The left moving heavy vehicles counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft> <http://www.w3.org/2000/01/rdf-schema#label> "heavy_lft"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt> <http://www.w3.org/2000/01/rdf-schema#comment> "The right moving heavy vehicles counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt> <http://www.w3.org/2000/01/rdf-schema#label> "heavy_rgt"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian> <http://www.w3.org/2000/01/rdf-schema#comment> "The pedestrians counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian> <http://www.w3.org/2000/01/rdf-schema#label> "pedestrian"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft> <http://www.w3.org/2000/01/rdf-schema#comment> "The left moving pedestrians counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft> <http://www.w3.org/2000/01/rdf-schema#label> "pedestrian_lft"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt> <http://www.w3.org/2000/01/rdf-schema#comment> "The right moving pedestrians counted by the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt> <http://www.w3.org/2000/01/rdf-schema#label> "pedestrian_rgt"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect pedestrians on the left hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left> <http://www.w3.org/2000/01/rdf-schema#label> "pedestrians_left"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right> <http://www.w3.org/2000/01/rdf-schema#comment> "The camera can detect pedestrians on the right hand side of the road."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right> <http://www.w3.org/2000/01/rdf-schema#label> "pedestrians_right"@en .
+# 
+# https://wecount.ilabt.imec.be/wecount/vocabulary#uptime
+<https://wecount.ilabt.imec.be/wecount/vocabulary#uptime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#uptime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/ns/sosa/ObservableProperty> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#uptime> <http://www.w3.org/2000/01/rdf-schema#comment> "The uptime percentage of the camera."@en .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#uptime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+<https://wecount.ilabt.imec.be/wecount/vocabulary#uptime> <http://www.w3.org/2000/01/rdf-schema#label> "uptime"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

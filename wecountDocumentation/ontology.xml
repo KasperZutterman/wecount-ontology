@@ -1,0 +1,530 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <Ontology>
+        <imports rdf:resource="http://schema.org/"/>
+        <imports rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <imports rdf:resource="https://www.w3.org/ns/sosa/"/>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:creator rdf:resource="http://hdelva.be/#me"/>
+        <terms:creator rdf:resource="https://julianrojas.org/#me"/>
+        <terms:creator rdf:resource="https://kasperzutterman.com/#me"/>
+        <terms:creator rdf:resource="https://pietercolpaert.be/#me"/>
+        <terms:description xml:lang="en">This ontology introduces the definition of a set of WeCount related terms. It reuses and extends the SOSA (see https://www.w3.org/ns/sosa/) and the schema.org (see https://schema.org) vocabularies.</terms:description>
+        <terms:hasFormat rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:issued>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:modified>
+        <terms:rights>https://telraam.net/</terms:rights>
+        <vann:preferredNamespacePrefix>wecount</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://wecount.ilabt.imec.be/wecount/vocabulary</vann:preferredNamespaceUri>
+        <rdfs:label xml:lang="en">Open WeCount Vocabulary</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://schema.org/"/>
+        <rdfs:seeAlso rdf:resource="https://telraam.net/"/>
+        <rdfs:seeAlso rdf:resource="https://www.w3.org/ns/sosa/"/>
+        <foaf:primaryTopic rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+    </Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+
+    <AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/primaryTopic -->
+
+
+    <AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/primaryTopic"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#active -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#active">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus"/>
+        <rdfs:comment xml:lang="en">The camera is active.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">active</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#direction -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#direction">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">The direction the camera is oriented.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">direction</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#mac -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#mac">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The mac address of the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">mac</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#manual -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#manual">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">If the measurements of the camera are taken manually or not.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">manual</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#non_active -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#non_active">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus"/>
+        <rdfs:comment xml:lang="en">The camera is not active.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">non active</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#segment_id">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The segment_id of the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">segment_id</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#user_id -->
+
+
+    <DatatypeProperty rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#user_id">
+        <rdfs:domain rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The user_id of the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">user_id</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Document -->
+
+
+    <Class rdf:about="http://xmlns.com/foaf/0.1/Document"/>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#Camera -->
+
+
+    <Class rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera">
+        <rdfs:subClassOf rdf:resource="https://www.w3.org/ns/sosa/Sensor"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:modified>
+        <rdfs:comment xml:lang="en">A camera that can capture the traffic on the street.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">Camera</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </Class>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus -->
+
+
+    <Class rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#CameraStatus">
+        <rdfs:subClassOf rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#Camera"/>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:created>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-09-18</terms:modified>
+        <rdfs:comment xml:lang="en">The status a camera can be in.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">Camera Status</rdfs:label>
+        <ns1:term_status>stable</ns1:term_status>
+    </Class>
+    
+
+
+    <!-- https://www.w3.org/ns/sosa/ObservableProperty -->
+
+
+    <Class rdf:about="https://www.w3.org/ns/sosa/ObservableProperty"/>
+    
+
+
+    <!-- https://www.w3.org/ns/sosa/Sensor -->
+
+
+    <Class rdf:about="https://www.w3.org/ns/sosa/Sensor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary# -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#bike -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#bike">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The bikes counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">bike</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#bike_lft">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The left moving bikes counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">bike_lft</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#bike_rgt">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The right moving bikes counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">bike_rgt</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_left">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect bikes on the left hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">bikes_left</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#bikes_right">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect bikes on the right hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">bikes_right</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#car -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#car">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The cars counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">car</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#car_lft">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The left moving cars counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">car_lft</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#car_rgt">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The right moving cars counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">car_rgt</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#cars_left">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect cars on the left hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">cars_left</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#cars_right">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect cars on the right hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">cars_right</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#heavy -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#heavy">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The heavy vehicles counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">heavy</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_lft">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The left moving heavy vehicles counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">heavy_lft</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#heavy_rgt">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The right moving heavy vehicles counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">heavy_rgt</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The pedestrians counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">pedestrian</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_lft">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The left moving pedestrians counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">pedestrian_lft</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrian_rgt">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The right moving pedestrians counted by the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">pedestrian_rgt</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_left">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect pedestrians on the left hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">pedestrians_left</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#pedestrians_right">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The camera can detect pedestrians on the right hand side of the road.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">pedestrians_right</rdfs:label>
+    </NamedIndividual>
+    
+
+
+    <!-- https://wecount.ilabt.imec.be/wecount/vocabulary#uptime -->
+
+
+    <NamedIndividual rdf:about="https://wecount.ilabt.imec.be/wecount/vocabulary#uptime">
+        <rdf:type rdf:resource="https://www.w3.org/ns/sosa/ObservableProperty"/>
+        <rdfs:comment xml:lang="en">The uptime percentage of the camera.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://wecount.ilabt.imec.be/wecount/vocabulary#"/>
+        <rdfs:label xml:lang="en">uptime</rdfs:label>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
