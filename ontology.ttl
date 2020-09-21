@@ -1,0 +1,243 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix mv:     <http://schema.mobivoc.org/> .
+@prefix gr:     <http://purl.org/goodrelations/v1#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix sosa:   <https://www.w3.org/ns/sosa/> .
+@prefix wecount:     <https://wecount.ilabt.imec.be/wecount/vocabulary#> .
+
+wecount:     a                 foaf:Document ;
+        foaf:primaryTopic wecount: ;
+        dct:issued        "2020-09-18"^^xsd:date ;
+        dct:modified      "2020-09-18"^^xsd:date ;
+        dct:hasFormat     wecount: ;
+        cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
+        dct:rights        "https://telraam.net/" .
+
+wecount:     a                 owl:Ontology ;
+        rdfs:label        "Open WeCount Vocabulary"@en ;
+        dct:description   "This ontology introduces the definition of a set of WeCount related terms. It reuses and extends the SOSA (see https://www.w3.org/ns/sosa/) and the schema.org (see https://schema.org) vocabularies."@en ;
+        vann:preferredNamespacePrefix  "wecount" ;
+        vann:preferredNamespaceUri     "https://wecount.ilabt.imec.be/wecount/vocabulary";
+        rdfs:seeAlso      sosa:, schema: ;
+        rdfs:seeAlso      <https://telraam.net/> ;
+        dct:creator       <https://kasperzutterman.com/#me> ;
+        dct:creator       <https://pietercolpaert.be/#me> ;
+        dct:creator       <http://hdelva.be/#me> ;
+        dct:creator       <https://julianrojas.org/#me> ;
+        owl:imports       schema:, wecount:, sosa: .
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+wecount:Camera
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A camera that can capture the traffic on the street."@en ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "Camera"@en ;
+        rdfs:subClassOf   sosa:Sensor ;
+        dct:created       "2020-09-18"^^xsd:date ;
+        dct:modified      "2020-09-18"^^xsd:date ;
+        vs:term_status    "stable" .
+
+wecount:CameraStatus
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "The status a camera can be in."@en ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "Camera Status"@en ;
+        rdfs:subClassOf   wecount:Camera ;
+        dct:created       "2020-09-18"^^xsd:date ;
+        dct:modified      "2020-09-18"^^xsd:date ;
+        vs:term_status    "stable" .
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+wecount:mac
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The mac address of the camera."@en ;
+        rdfs:domain       wecount:Camera ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "mac"@en ;
+        rdfs:range        xsd:integer .
+
+wecount:segment_id
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The segment_id of the camera."@en ;
+        rdfs:domain       wecount:Camera ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "segment_id"@en ;
+        rdfs:range        xsd:integer .
+
+wecount:user_id
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The user_id of the camera."@en ;
+        rdfs:domain       wecount:Camera ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "user_id"@en ;
+        rdfs:range        xsd:integer .
+
+wecount:direction
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The direction the camera is oriented."@en ;
+        rdfs:domain       wecount:Camera ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "direction"@en ;
+        rdfs:range        xsd:boolean .
+
+wecount:active
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The camera is active."@en ;
+        rdfs:domain       wecount:CameraStatus ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "active"@en .
+
+wecount:non_active
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The camera is not active."@en ;
+        rdfs:domain       wecount:CameraStatus ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "non active"@en .
+
+wecount:manual
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "If the measurements of the camera are taken manually or not."@en ;
+        rdfs:domain       wecount:Camera ;
+        rdfs:isDefinedBy  wecount: ;
+        rdfs:label        "manual"@en ;
+        rdfs:range        xsd:boolean .
+
+
+#################################################################
+#
+#    Observable properties
+#
+#################################################################
+
+wecount:pedestrians_left 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "pedestrians_left"@en ;
+        rdfs:comment          "The camera can detect pedestrians on the left hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:pedestrians_right 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "pedestrians_right"@en ;
+        rdfs:comment          "The camera can detect pedestrians on the right hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:bikes_left 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "bikes_left"@en ;
+        rdfs:comment          "The camera can detect bikes on the left hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:bikes_right  
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "bikes_right"@en ;
+        rdfs:comment          "The camera can detect bikes on the right hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:cars_left 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "cars_left"@en ;
+        rdfs:comment          "The camera can detect cars on the left hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:cars_right 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "cars_right"@en ;
+        rdfs:comment          "The camera can detect cars on the right hand side of the road."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:uptime 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "uptime"@en ;
+        rdfs:comment          "The uptime percentage of the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:heavy 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "heavy"@en ;
+        rdfs:comment          "The heavy vehicles counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:car 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "car"@en ;
+        rdfs:comment          "The cars counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:bike 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "bike"@en ;
+        rdfs:comment          "The bikes counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:pedestrian 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "pedestrian"@en ;
+        rdfs:comment          "The pedestrians counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:heavy_lft 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "heavy_lft"@en ;
+        rdfs:comment          "The left moving heavy vehicles counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:heavy_rgt 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "heavy_rgt"@en ;
+        rdfs:comment          "The right moving heavy vehicles counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:car_lft 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "car_lft"@en ;
+        rdfs:comment          "The left moving cars counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:car_rgt 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "car_rgt"@en ;
+        rdfs:comment          "The right moving cars counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:bike_lft 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "bike_lft"@en ;
+        rdfs:comment          "The left moving bikes counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:bike_rgt 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "bike_rgt"@en ;
+        rdfs:comment          "The right moving bikes counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:pedestrian_lft 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "pedestrian_lft"@en ;
+        rdfs:comment          "The left moving pedestrians counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
+
+wecount:pedestrian_rgt 
+        a                     sosa:ObservableProperty ;
+        rdfs:label            "pedestrian_rgt"@en ;
+        rdfs:comment          "The right moving pedestrians counted by the camera."@en ;
+        rdfs:isDefinedBy      wecount: .
